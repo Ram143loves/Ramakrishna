@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<header>
+<title> Online Registration form for Iskra2k19</title></header>
+<style>
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 40%;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  }
+  
+  button {
+  background-color: #b30059;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: sandbox;
+  cursor: pointer;
+  width: 20%;
+  opacity: 0.9;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+  
+  }
+  
+.select{
+   width: 100%;
+   padding:20px;
+   margin: 5px 0 22px 0;
+   background:  #ffb380;
+
+}
+  
+ 
+</style>
+<body
+style="background-image:url('sparks.jpg');" width="80%">
+ <center> <h1 style="color:#ffff00"><i> Online Registration </i></h1>
+ <p  style="color:#ffff00" > <i> Please Register Bellow!.......</i></p>
+ </center>
+   
+  <form action="onlineform.php" method="post">
+  <div   id="id01" class="container">
+  
+     <label style="color:#00cc00"> Name: </label>
+	 <input type="text"  placeholder="Enter Your Name" name="fullname" id="myInput"  required />
+	 <p></p>
+	 <label style="color:#00cc00"> <b> Gender:</b></label>
+	   <input type="radio" name="gender"  style="color:#00cc00" > Male </input>
+	     
+	    <input type="radio" name="gender" > Female </input>
+	  
+	<p></p>
+	 <label style="color:#00cc00"> <b>Qualification:<b></label>
+     <select id="myInput"  name="year" required>
+	 <option value="0"   ><i>select one option</i></option>
+	 <option value="1"    >B.Tech Ist Year</option>
+	 <option value="2"   > B.Tech IInd Year </option>
+	 <option value="3"   >B.Tech IIIrd Year </option>
+	 <option value="4"   >B.Tech IV Year </option>
+	 </select>
+	 <select id="myInput"  name="branch" required>
+	 
+	 <option value="0"  ><i>select one option</i></option>
+	 <option value="1"  >Computer Science Engineering</option>
+	 <option value="2"  > Civil Engineering</option>
+	 <option value="3"  >Mechanical Engineering </option>
+	 <option value="4"  >Information Technology </option>
+	 <option value="5"  > Electric And Electronic Engineering</option>
+	 <option value="6"  >Electronic Communication Engineering</option>
+	 <option value="7"  >Auto Mobile Engineering</option>
+	 <option value="8"  >Minning Engineering</option>
+	 <option value="6"   >Agriculture Engineering</option>
+	 </select>
+
+	<p></p>
+	 <label style="color:#00cc00"> <b>College  Name:<b></label>
+	 <input type="text"  placeholder="College Name" id="myInput"  required />
+	  <p></p>
+	  
+	   
+	<label style="color:#00cc00"> <b> Mobile No:</b></label>
+	  <input type="text" placeholder="Enter phone Number" id="myInput" required  />
+	  <p></p>
+	  <label style="color:#00cc00"> <b> Email:</b></label>
+	  <input type="text" placeholder="Enter Your Email"  name="email"id="myInput" required  />
+	  <p></p>
+	  <label style="color:#00cc00"> <b> Events:</b></label>
+	<div>
+             <input type="checkbox" id="myInput"  name="" >Technical Quiz:</input><p></p>
+             <input type="checkbox" id="myInput"  name="" >Sports</input><p></p>
+             <input type="checkbox" id="myInput" name="">power point presentation </input><p></p>
+			 <input type="checkbox" id="myInput" name="" >Poster presentation </input><p></p>
+             <input type="checkbox" id="myInput" name="">project Expo..</input><p></p>
+             <input type="checkbox" id="myInput" name="" >Creative writting </input><p></p>
+             <input type="checkbox" id="myInput" name="">Go Green </input><p></p>
+             
+   </div>
+     
+       
+	 
+	 
+       <div class="submit">
+         <button  onclick="document.getElementById('myInput').placeholder=''" class="cancelbtn">Reset</button>
+         <button type="submit" class="submitbtn">Register</button>
+       </div>
+   
+  
+  
+  
+ </div>
+
+</form>
+
+</body>
+
+
+
+</html>
